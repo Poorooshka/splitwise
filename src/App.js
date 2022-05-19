@@ -3,7 +3,7 @@ import People from "./People";
 import usePayments from "./usePayments";
 import usePeople from "./usePeople";
 import Payment from "./Payment";
-import PaymentsList from "./PaymentsList";
+import DebtsList from "./DebtsList";
 
 const App = () => {
   const [hasTripStarted, setHasTripStarted] = useState(false);
@@ -63,7 +63,7 @@ const App = () => {
             paymentForEverybodyAmount={paymentForEverybodyAmount}
             paymentToAnotherAmount={paymentToAnotherAmount}
           />
-          <PaymentsList
+          <DebtsList
             paymentsFromOnePersonToAnother={paymentsFromOnePersonToAnother}
             paymentForEverybody={paymentForEverybody}
             people={people}
